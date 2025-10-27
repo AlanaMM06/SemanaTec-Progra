@@ -86,8 +86,8 @@ function draw() {
   ctx.fillRect(catcher.x, catcher.y, catcher.width, catcher.height);
 
   // Dibuja el score
-  ctx.fillStyle = "white";
-  ctx.font = "18px Arial";
+  ctx.fillStyle = "red";
+  ctx.font = "18px Gore";
   ctx.fillText("Score: " + score, 10, 25);
 }
 
