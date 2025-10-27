@@ -85,10 +85,8 @@ function draw() {
   ctx.fillStyle = catcher.color;
   ctx.fillRect(catcher.x, catcher.y, catcher.width, catcher.height);
 
-  // Dibuja el score
-  ctx.fillStyle = "white";
-  ctx.font = "18px Arial";
-  ctx.fillText("Score: " + score, 10, 25);
+  // Actualiza el contador en el HTML
+  document.getElementById('counter').textContent = `Score: ${score}`;
 }
 
 // 🌀 Bucle del juego
