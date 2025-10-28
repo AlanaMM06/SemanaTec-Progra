@@ -14,7 +14,7 @@ let ball = {
   x: Math.random() * 380 + 10, // Posición aleatoria inicial (evita los bordes)
   y: 0,
   radius: 15,
-  speed: 3,
+  speed: 8,
   color: "red",
 };
 
@@ -53,7 +53,7 @@ function update() {
     score++;
     resetBall();
     // Aumenta un poco la dificultad cada 5 puntos
-    if (score % 5 === 0) ball.speed += 0.5;
+    if (score % 2 === 0) ball.speed += 2;
   }
 
   // 🚫 Si la bola cae fuera del canvas
